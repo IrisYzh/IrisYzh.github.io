@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Interactive Fiction</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="player_inventory">
+  <span class="item-container"><h3>背包🎒</h3>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+    <div class="inventory-box empty"></div>
+  </span>
+</div>
+<div id="steps-taken">
+  <h3>进度回溯</h3>
+  <ul id='steps'>
+  </ul>
+</div>
+
+<div id="impress">
+    <div id="紧急迫降" class="step slide">
+      <div class="slide-text">
+        <p>你们的宇宙飞船在太空中出了故障，只能紧急迫降在一个远古星球上，想要离开这里，必须请这个星球上的三位神仙来帮助你们修理飞船。</p>
+        <p>这三个神仙可不是白帮忙的，他们需要你提供贡品才会帮忙，关键是，每个神仙需要的贡品种类不一样，送错贡品后果会很严重。</p>
+        <p>该如何知道三位神仙的信息呢？</p>
+        <p><a href='#三神谜题'>找神仙唠唠嗑儿😎</a></p>
+        <p><a href='#规则石碑'>来到一个新地方，当然要先随便转转🥳</a></p>
+        <p><a href='#采摘贡品'>当务之急难道不是去找贡品吗啊喂🫡</a></p>
+        <div class="event-text"></div>
+      </div>
+    </div>
+
+    <div id="三神谜题" class="step slide" data-x="1500">
+      <div class="slide-text">
+        <p>你来到了三位神面前，他们坐成一排，一脸慈祥地看着你。</p>
+        <p>坐在左边的神说：“中间坐的是真理之神。”</p>
+        <p>坐在中间的神说：“我是变化之神。”</p>
+        <p>坐在右边的神说：“坐在中间的是谎言之神。”</p>
+        <p>最后，他们齐声说：“现在，按顺序投喂我们吧！”</p>
+        <p><a href="#" onclick='location = window.location.pathname; return false;'>？到底在说什么，好像我的打开方式不太对啊……</a></p>
+        <div class="event-text"></div>
+      </div>
+      <div class="menu">
+        <div class="inventory-box">
+          <img src="god_of_truth.png" alt="god_of_truth" class="item" id="god_of_truth">
+          <img src="god_of_lies.png" alt="god_of_lies" class="item" id="god_of_lies">
+          <img src="god_of_change.png" alt="god_of_change" class="item" id="god_of_change">
+        </div>
+      </div>
+    </div>
+
+    <div id="规则石碑" class="step slide" data-x="-1500">
+      <div class="slide-text">
+        <p>这个星球似乎由小岛组成，有着和地球截然不同的景色，水何澹澹，山岛竦峙，树木丛生，百草……突然，正在吟诗的你被地上的一块石头绊了一跤！</p>
+        <p>低头一看，原来是一块刻了字的石碑……</p>
+        <p>石碑上歪歪扭扭地写着《游戏规则》：</p>
+        <p>god_of_lie's只说真话，吃红红的「真果」。谎言之神只说假话，吃绿绿的「假果」。变化之神说话半真半假，吃黄黄的「kiwi」</p>
+      </div>
+      <div class="menu">
+        <p>好的我记住了！现在就去<a href='#三神谜题'>找神仙聊聊🧐</a></p>
+        <p>很简单，现在只需要去<a href='#采摘贡品'>找贡品😏</a></p>
+        <p>一头雾水，先<a href="#" onclick='location = window.location.pathname; return false;'>原路返回😐</a>吧</p>
+      </div>
+      </div>
+
+      <div id="slide1" class="step slide" data-y="1500">
+        <div class="slide-text">
+          <p>你被一阵奇异的果香吸引，很快，你就发现路边三棵一模一样的树上，却长着三种形状各异的果实……</p>
+          <p>树下的木牌上写着：“这三棵树依次是：真果树🌲假果树🌲奇异果树🌲，它们结出的果实是神的贡品”</p>
+          <p>这贡品这么难以下咽吗……你犹犹豫豫地摘下果实放进背包，真想赶紧逃离这个奇怪的地方。</p>
+        </div>
+        <div class="menu item-container">
+          <div class="inventory-box">
+            <img src="truthfruit.png" alt="truthfruit" class="item" id="truthfruit">
+            <img src="fakefruit.png" alt="fakefruit" class="item" id="fakefruit">
+            <img src="kiwi.png" alt="kiwi" class="item" id="kiwi">
+          </div>
+        </div>
+</div>
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+<script src="game.js"></script>
+<script src="dragDrop.js"></script>
+
+</body>
+</html>
