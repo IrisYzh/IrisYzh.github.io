@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- FAVICON -->
+		<link rel="icon" type="image/png" href="assets/img/favicon.png">
+		<!-- FONTS -->
+		<link rel="stylesheet" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/fonts/iconsmind/iconsmind.css">
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" href="assets/css/plugins.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="vlt-site-holder animsition vlt-footer-fixed">
+			<div class="vlt-content-holder">
+				<header class="vlt-header-holder vlt-header-fixed" data-header-fixed="1">
+					<div class="container">
+						<div class="vlt-header-inner">
+							<div class="vlt-header-left">
+								<a href="index.html" class="vlt-site-logo">
+								<img src="assets/img/logo.png" alt="Logo" style="max-height: 30px">
+								</a>
+							</div>
+							<div class="vlt-header-right">
+								<div class="vlt-menu-toggle vlt-fullscreen-menu-toggle" data-before-text="Menu">
+									<span class="line line-one"><span class="inner"></span></span>
+									<span class="line line-two"><span class="inner"></span></span>
+									<span class="line line-three"><span class="inner"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- /.vlt-header-holder vlt-header-fixed -->
+				<div class="vlt-navigation-fullscreen-holder">
+					<div class="vlt-navigation-fullscreen">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="menu-item-has-children">
+								<a href="#" class="no-anims">About</a>
+								<ul class="sub-menu">
+									<li><a href="#">About Me</a></li>
+									<li><a href="#">My abilities</a></li>
+									<li><a href="#">Comments</a></li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#" class="no-anims">Work</a>
+								<ul class="sub-menu">
+									<li><a href="#">Interactive Art</a></li>
+									<li><a href="#">Service Design</a></li>
+									<li><a href="#">UI/UX Design</a></li>
+									<li><a href="#">Other</a></li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#" class="no-anims">Moments</a>
+								<ul class="sub-menu">
+									<li><a href="#">Stories</a></li>
+									<li><a href="#">Plogs</a></li>
+									<li><a href="#">Vlogs</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<div class="vlt-navigation-socials">
+							<ul>
+								<li><a href="#" class="tooltip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#" class="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="#" class="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" class="tooltip" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+							</ul>
+						</div>
+						<!-- /.vlt-navigation-socials -->
+					</div>
+				</div>
+				<!-- /.vlt-navigation-fullscreen-holder -->
+				<div class="vlt-hero-title-holder jarallax" style="background-image: url('assets/img/index.png');">
+					<div class="vlt-hero-title-inner">
+						<div class="col-12">
+							<h1 class="vlt-hero-title">PORTFOLIO</h1>
+						</div>
+						<p class="vlt-hero-subtitle">
+							Hi, thank you for visiting!&nbsp;&nbsp;I&#39;m Iris, a digital media art student based in Beijing, China.<br />This website is a portfolio designed to show my work and abilities for potential employers and clients.
+						</p>
+					</div>
+				</div>
+				<!-- /.vlt-hero-title-holder -->
+				<main class="vlt-main-holder vlt-main-padding">
+					<div class="container">
+						<div class="vlt-portfolio-grid-filters">
+							<div data-filter="*" class="cbp-filter-item cbp-filter-item-active"><span>All</span></div>
+							<div data-filter=".portfolio_category-interactiveart" class="cbp-filter-item"><span>Interactive Art</span></div>
+							<div data-filter=".portfolio_category-servicedesign" class="cbp-filter-item"><span>Service Design</span></div>
+							<div data-filter=".portfolio_category-uiuxdesign" class="cbp-filter-item"><span>UI/UX</span></div>
+							<div data-filter=".portfolio_category-other" class="cbp-filter-item"><span>Other</span></div>
+						</div>
+						<div class="vlt-portfolio-grid cubeportfolio" id="cubeportfolio">
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-interactiveart">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/Simbiosis.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">∞ Simbiosis</h5>
+									<p class="vlt-portfolio-grid-cat">Interactive art installation combining Arduino and TouchDesigner</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-interactiveart">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/Ripple.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">Ripple</h5>
+									<p class="vlt-portfolio-grid-cat">Music visualizations made with TouchDesigner</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-servicedesign">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/RE_.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">RE_</h5>
+									<p class="vlt-portfolio-grid-cat">Service Design</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-uiuxdesign">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/Light Navigator.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">Light Navigator</h5>
+									<p class="vlt-portfolio-grid-cat">HMI Design</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-other">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/Swamp.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">Swamp</h5>
+									<p class="vlt-portfolio-grid-cat">Aigc-assisted Game Design Project</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-interactiveart">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/Read More.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">Read More</h5>
+									<p class="vlt-portfolio-grid-cat">Interactive art installation with eye tracker</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-uiuxdesign">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/E-Closet.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">E-Closet</h5>
+									<p class="vlt-portfolio-grid-cat">A Fashion Street with Digital Large-screen Display</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-other">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/NOMOPHOBIA.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">NOMOPHOBIA</h5>
+									<p class="vlt-portfolio-grid-cat">Information visualization animation made with AE</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-servicedesign">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/COLORMATE.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">COLORMATE</h5>
+									<p class="vlt-portfolio-grid-cat">Intelligent makeup matching app based on AI technology</p>
+								</div>
+							</article>
+							<!-- /.cbp-item  -->
+							<article class="cbp-item vlt-portfolio-grid-item vlt-portfolio-style2 portfolio_category-interactiveart">
+								<div class="vlt-portfolio-grid-image">
+									<a class="vlt-portfolio-grid-link" href="portfolio-single.html">
+									<img src="assets/img/portfolio/ME.png" alt="">
+									</a>
+								</div>
+								<div class="vlt-portfolio-grid-content">
+									<h5 class="vlt-portfolio-grid-title">ME</h5>
+									<p class="vlt-portfolio-grid-cat">Interactive works made with processing</p>
+								</div>
+							</article>														
+						</div>
+						<nav class="vlt-pagination-load-more-btn" data-max-pages="1">
+							<a href="load-more-portfolio-page-1.html" class="vlt-btn vlt-btn-primary vlt-btn-ajax-load">Load More</a>
+						</nav>
+					</div>
+				</main>
+				<!-- /.vlt-main-holder vlt-main-padding -->
+			</div>
+			<!-- /.vlt-content-holder -->
+			<footer class="vlt-footer-holder vlt-footer-minimal" data-footer-fixed="1">
+				<div class="vlt-footer-inner">
+					<div class="container">
+						<div class="text-center">
+							<a href="index.html" class="vlt-site-logo">
+							<img src="assets/img/logo.png" alt="Vinero" style="max-height: 30px">
+							</a>
+							<div class="vlt-footer-menu">
+								<div>
+									<ul>
+										<li>
+											<a href="#">About</a>
+										</li>
+										<li>
+											<a href="#">Work</a>
+										</li>
+										<li>
+											<a href="#">Moments</a>
+										</li>
+										<li>
+											<a href="#">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="vlt-footer-copyright">
+								<p>Copyright © 2024 Iris_Yang.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /.vlt-footer-holder -->
+		</div>
+		<!-- /.vlt-site-holder -->
+		<a href="#" class="vlt-back-to-top hidden"><i class="fa fa-angle-up"></i></a>
+		<!-- /.vlt-back-to-top -->
+	</body>
+	<!-- SCRIPTS -->
+	<script src="assets/scripts/jquery.min.js"></script>
+	<script src="assets/scripts/plugins.min.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict()(function($){
+			var gridContainer = $('#cubeportfolio');
+			gridContainer.imagesLoaded(function(){
+				gridContainer.cubeportfolio({
+					defaultFilter: '*',
+					filters: '.vlt-portfolio-grid-filters',
+					animationType: 'fadeOut',
+					layoutMode: 'grid', //mosaic
+						sortToPreventGaps: true,
+					gapHorizontal: 30,
+					gapVertical: 30,
+					gridAdjustment: 'responsive',
+					mediaQueries:
+					[{
+						width: 1170,
+						cols: 3,
+					}, {
+						width: 991,
+						cols: 3,
+					}, {
+						width: 767,
+						cols: 2,
+					}, {
+						width: 575,
+						cols: 1,
+					}],
+					displayType: 'default',
+					displayTypeSpeed: 150,
+				});
+			});
+		});
+	</script>
+	<script src="assets/scripts/script.js"></script>
+</html>
